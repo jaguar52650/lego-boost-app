@@ -18,7 +18,7 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        node-version: '10.14'
+        node-version: '12.x'
 
     - name: npm install, build, and test
       run: |
@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'boostonline'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_c0aeb57cc15045438eb8edb1dfdb108a }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_1eab4131f795475695bc32fd69416b7d }}
         package: .
